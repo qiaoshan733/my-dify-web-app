@@ -1,0 +1,84 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f7f9;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px); /* 减去左右 padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical; /* 允许垂直调整大小 */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#response-area {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 150px;
+    background-color: #fff;
+    white-space: pre-wrap; /* 保留换行和空格 */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-family: Consolas, monaco, monospace; /* 等宽字体显示结果 */
+    line-height: 1.5;
+}

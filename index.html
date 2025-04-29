@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 Dify 应用</title>
-    <style>
-        /* 简单样式，让它看起来不那么简陋 */
-        body { font-family: sans-serif; padding: 20px; }
-        #response-area { margin-top: 15px; padding: 10px; border: 1px solid #ccc; min-height: 50px; background-color: #f9f9f9; white-space: pre-wrap; } /* white-space 用于保留换行 */
-        textarea { width: 80%; margin-bottom: 10px; }
-        button { padding: 8px 15px; }
-    </style>
+    <title>LPSC 商业案例生成器</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引入 CSS 文件 -->
 </head>
 <body>
 
-    <h1>和我的 AI 助手对话</h1>
+    <h1>LPSC 商业案例研究与测验生成器</h1>
+    <p>请输入以下信息，AI 将为您生成案例研究和测验题目。</p>
 
-<form id="dify-form">
-        <!-- 将 input 修改为 textarea，并添加 id -->
-        <textarea id="user-input" placeholder="在这里输入你的问题..." rows="3"></textarea><br>
-        <button type="submit" id="submit-button">发送</button>
+    <form id="dify-form">
+        <div class="form-group">
+            <label for="input-var1">知识点:</label>
+            <textarea id="input-var1" placeholder="例如：成本分析、供应商评估、风险管理..." rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="input-var2">学习目标:</label>
+            <textarea id="input-var2" placeholder="例如：掌握 LPSC 模型在 XX 行业的应用" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="input-var3">LPSC 知识文本 :</label>
+            <textarea id="input-var3" placeholder="粘贴相关的 LPSC 理论或背景知识..." rows="6"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="input-var4">题目类型及数量:</label>
+            <input type="text" id="input-var4" placeholder="例如：单选题3道、多选题3道、判断题4道" required>
+        </div>
+
+        <button type="submit" id="submit-button">开始生成</button>
     </form>
 
-    <h2>AI 回复:</h2>
+    <h2>生成结果:</h2>
     <div id="response-area">
-        AI 的回答会显示在这里...
+        请填写以上信息并点击“开始生成”...
     </div>
 
-    <!-- 我们之后会在这里引入 JavaScript 文件 -->
-     <script src="script.js"></script>
+    <script src="script.js"></script> <!-- 引入 JavaScript 文件 -->
 
 </body>
 </html>
