@@ -3,8 +3,8 @@
 const form = document.getElementById('dify-form');
 const inputVar1 = document.getElementById('input-var1'); // 对应知识点
 const inputVar2 = document.getElementById('input-var2'); // 对应学习目标
-const inputVar3 = document.getElementById('input-var3'); // 对应知识文本
-const inputVar4 = document.getElementById('input-var4'); // 对应题目要求
+const inputVar3 = document.getElementById('input-var3'); // 对应题目要求
+const inputVar4 = document.getElementById('input-var4'); // 对应知识文本
 const responseArea = document.getElementById('response-area');
 const submitButton = document.getElementById('submit-button');
 
@@ -24,8 +24,8 @@ form.addEventListener('submit', async (event) => {
     const difyInputs = {
         'knowledgePoints': value1,  // 假设 Dify 变量名叫 learning_objective
         'learningObjectives': value2,      // 假设 Dify 变量名叫 focus_points
-        'knowledge': value3,    // 假设 Dify 变量名叫 knowledge_text
-        'questionType': value4, // 假设 Dify 变量名叫 quiz_requirements
+        'questionType': value3,    // 假设 Dify 变量名叫 knowledge_text
+        'knowledge': value4, // 假设 Dify 变量名叫 quiz_requirements
         // *** 确保这里的 key 和你在 Dify 工作流 Start 节点里设置的变量名完全一致！ ***
     };
 
